@@ -248,17 +248,17 @@ juce::AudioProcessorValueTreeState::ParameterLayout
 //        juce::AudioParameterFloat
         layout.add(std::make_unique<juce::AudioParameterFloat>(juce::ParameterID("LowCut Freq", 1),
                                                                "LowCut Freq",
-                                                               juce::NormalisableRange<float>(20.f, 20000.f, 1.f, 1.f),
+                                                               juce::NormalisableRange<float>(20.f, 20000.f, 1.f, 0.25f),
                                                                20.f));
         
         layout.add(std::make_unique<juce::AudioParameterFloat>(juce::ParameterID("HighCut Freq", 1),
                                                                "HighCut Freq",
-                                                               juce::NormalisableRange<float>(20.f, 20000.f, 1.f, 1.f),
+                                                               juce::NormalisableRange<float>(20.f, 20000.f, 1.f, 0.25f),
                                                                20000.f));
         
         layout.add(std::make_unique<juce::AudioParameterFloat>(juce::ParameterID("Peak Freq", 1),
                                                                "Peak Freq",
-                                                               juce::NormalisableRange<float>(20.f, 20000.f, 1.f, 1.f),
+                                                               juce::NormalisableRange<float>(20.f, 20000.f, 1.f, 0.25f),
                                                                750.f));
         
         layout.add(std::make_unique<juce::AudioParameterFloat>(juce::ParameterID("Peak Gain", 1),
